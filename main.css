@@ -1,16 +1,6 @@
-body {
-
-}
-.shop {
-}
 .shop__select {
   padding: 110px 0px 0px;
-  /* margin-right: 24px; */
   margin-bottom: 50px;
-}
-
-
-.select__selection {
 }
 
 .select__description {
@@ -37,16 +27,19 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
 .shop__item {
-  margin-bottom: 170px;
+  margin-bottom: 40px;
   width: 416px;
-  height: 442px;
+  height: 580px;
   list-style-type: none;
   cursor: pointer;
   transition: all 0.5s ease;
+  overflow: hidden;
+  box-shadow: 0 0 29px 0 hsl(0deg 0% 40% / 10%);
 }
 
-.shop__img--one {
+.shop__imgone {
   background-image: url('img/rigth-book.jpg');
   width: 416px;
   height: 442px;
@@ -55,7 +48,8 @@ body {
   overflow: hidden;
   transition: all 0.5s ease;
 }
-.shop__item:hover .shop__img--one {
+
+.shop__item:hover .shop__imgone {
   position: relative;
   top: -10px;
   background-image: url('img/white-book.jpg');
@@ -67,7 +61,7 @@ body {
   transition: all 0.5s ease;
 }
 
-.shop__img--two {
+.shop__imgtwo {
   background-image: url('img/red-book-left.jpg');
   width: 416px;
   height: 442px;
@@ -76,7 +70,8 @@ body {
   transition: all 0.5s ease;
   overflow: hidden;
 }
-.shop__item:hover .shop__img--two {
+
+.shop__item:hover .shop__imgtwo {
   position: relative;
   top: -10px;
   background-image: url('img/red-book-right.jpg');
@@ -85,8 +80,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;  
   transition: all 0.5s ease;
+  overflow: hidden;
 }
-.shop__img--three {
+
+.shop__imgthree {
   background-image: url('img/white-notebook-right.jpg');
   width: 416px;
   height: 442px;
@@ -95,7 +92,8 @@ body {
   transition: all 0.5s ease;
   overflow: hidden;
 }
-.shop__item:hover .shop__img--three {
+
+.shop__item:hover .shop__imgthree {
   position: relative;
   top: -10px;
   background-image: url('img/white-notebook-left.jpg');
@@ -103,9 +101,11 @@ body {
   height: 442px;
   background-repeat: no-repeat;
   background-size: cover;  
+  overflow: hidden;
   transition: all 0.5s ease;
 }
-.shop__img--four {
+
+.shop__imgfour {
   background-image: url('img/list-rigth.jpg');
   width: 416px;
   height: 442px;
@@ -114,7 +114,8 @@ body {
   transition: all 0.5s ease;
   overflow: hidden;
 }
-.shop__item:hover .shop__img--four {
+
+.shop__item:hover .shop__imgfour {
   position: relative;
   top: -10px;
   background-image: url('img/list-left.jpg');
@@ -122,9 +123,11 @@ body {
   height: 442px;
   background-repeat: no-repeat;
   background-size: cover;  
+  overflow: hidden; 
   transition: all 0.5s ease;
 }
-.shop__img--five {
+
+.shop__imgfive {
   background-image: url('img/not-right.jpg');
   width: 416px;
   height: 442px;
@@ -133,7 +136,8 @@ body {
   transition: all 0.5s ease;
   overflow: hidden;
 }
-.shop__item:hover .shop__img--five {
+
+.shop__item:hover .shop__imgfive {
   position: relative;
   top: -10px;
   background-image: url('img/left-note.jpg');
@@ -141,9 +145,11 @@ body {
   height: 442px;
   background-repeat: no-repeat;
   background-size: cover;  
+  overflow: hidden;
   transition: all 0.5s ease;
 }
-.shop__img--six {
+
+.shop__imgsix {
   background-image: url('img//pen-right.jpg');
   width: 416px;
   height: 442px;
@@ -152,7 +158,8 @@ body {
   transition: all 0.5s ease;
   overflow: hidden;
 }
-.shop__item:hover .shop__img--six {
+
+.shop__item:hover .shop__imgsix {
   position: relative;
   top: -10px;
   background-image: url('img/pen-left.jpg');
@@ -160,19 +167,24 @@ body {
   height: 442px;
   background-repeat: no-repeat;
   background-size: cover;  
+  overflow: hidden;
   transition: all 0.5s ease;
 }
+
 .bxs-cart-add  {
   font-size: 20px;
 }
-.shop_part {
+
+.shop__part {
   position: relative;
   transition: all .5s ease;
 }
-.shop_part:hover .shop__card {
+
+.shop__part:hover .shop__card {
   background-color: #ff4800;
   transition: all 0.5s ease;
 } 
+
 .shop__card {
   position: absolute;
   top: 500px;
@@ -189,13 +201,13 @@ body {
   font-family: Dosis,sans-serif;
   transition:  all 1s ease;
   animation-name: myshopcard;
-  /* animation-duration: 0.4s; */
   animation-timing-function: ease;
 }
+
 @keyframes myshopcard {
   0% {
     opacity: 0;
-    transition: 0.4s ease;
+    transition: 0.5s ease;
   }
   100% {
       opacity: 1;
@@ -209,7 +221,6 @@ body {
   transition: 0.5s ease;
 }
 
-
 .card__add {
   color: #fff;
   text-transform: uppercase;
@@ -222,8 +233,6 @@ body {
 .shop__product {
   padding: 25px;
   text-align: center;
-  height: 138px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 } 
 
 .shop__title {
@@ -231,6 +240,7 @@ body {
   font-family: Dosis, sans-serif;
   margin-bottom: 5px;
 }
+
 .shop__link {
   text-decoration: none;
   color: #333;
@@ -238,6 +248,7 @@ body {
   font-weight: 700;
   transition: 0.5s ease;
 }
+
 .shop__link:hover {
   color: #ff4800;
   transition: 0.5s ease;
@@ -250,6 +261,7 @@ body {
   font-family: Dosis,sans-serif;
   font-weight: bold;
 }
+
 .shop__prise {
   color: #828893;
   margin-left: 10px;
@@ -257,13 +269,15 @@ body {
   font-family: Dosis,sans-serif;
   font-weight: bold;
 }
+
 .shop__star {
   margin-top: 8px;
 }
 
-.page__list {
+.page {
   margin-bottom: 40px;
 }
+
 .page__item {
   list-style-type: none;
   width: 40px;
@@ -285,6 +299,7 @@ body {
   color: #fff;
   transition: all 0.5s ease;
 }
+
 .page__link {
   color: #333;
   text-decoration: none;
@@ -301,6 +316,15 @@ body {
 .bx-chevrons-left {
   font-weight: 900;
 }
+
 .bx-chevrons-right {
   font-weight: 900;
+}
+
+.bxs-cart-add {
+  color: #fff;
+}
+
+.bxs-star {
+  color:#ffb708;
 }
