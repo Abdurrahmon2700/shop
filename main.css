@@ -7,7 +7,6 @@ body {
   padding: 110px 0px 0px;
   /* margin-right: 24px; */
   margin-bottom: 50px;
-  align-items: center;
 }
 
 .select__description {
@@ -48,8 +47,9 @@ body {
   width: 416px;
   height: 442px;
   list-style-type: none;
-  transition: all 0.5s ease;
   cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s ease;
 }
 
 .shop__img--one {
@@ -58,15 +58,18 @@ body {
   height: 442px;
   background-repeat: no-repeat;
   background-size: cover;  
-  transition: all 0.5s ease;
   overflow: hidden;
+  transition: all 0.5s ease;
 }
 .shop__item:hover .shop__img--one {
+  position: relative;
+  top: -10px;
   background-image: url('img/white-book.jpg');
   width: 416px;
   height: 442px;
   background-repeat: no-repeat;
   background-size: cover;  
+  overflow: hidden;
   transition: all 0.5s ease;
 }
 
@@ -80,6 +83,8 @@ body {
   overflow: hidden;
 }
 .shop__item:hover .shop__img--two {
+  position: relative;
+  top: -10px;
   background-image: url('img/red-book-right.jpg');
   width: 416px;
   height: 442px;
@@ -97,6 +102,8 @@ body {
   overflow: hidden;
 }
 .shop__item:hover .shop__img--three {
+  position: relative;
+  top: -10px;
   background-image: url('img/white-notebook-left.jpg');
   width: 416px;
   height: 442px;
@@ -114,6 +121,8 @@ body {
   overflow: hidden;
 }
 .shop__item:hover .shop__img--four {
+  position: relative;
+  top: -10px;
   background-image: url('img/list-left.jpg');
   width: 416px;
   height: 442px;
@@ -131,6 +140,8 @@ body {
   overflow: hidden;
 }
 .shop__item:hover .shop__img--five {
+  position: relative;
+  top: -10px;
   background-image: url('img/left-note.jpg');
   width: 416px;
   height: 442px;
@@ -148,6 +159,8 @@ body {
   overflow: hidden;
 }
 .shop__item:hover .shop__img--six {
+  position: relative;
+  top: -10px;
   background-image: url('img/pen-left.jpg');
   width: 416px;
   height: 442px;
@@ -248,6 +261,7 @@ body {
   margin-left: 10px;
   font-size: 13px;
   font-family: Dosis,sans-serif;
+  font-weight: bold;
 }
 .shop__star {
   margin-top: 8px;
