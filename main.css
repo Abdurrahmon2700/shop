@@ -7,6 +7,7 @@ body {
   padding: 110px 0px 0px;
   /* margin-right: 24px; */
   margin-bottom: 50px;
+  align-items: center;
 }
 
 .select__description {
@@ -41,24 +42,113 @@ body {
 .shop__list {
   justify-content: space-between;
   display: flex;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
 }
 .shop__item {
   margin-bottom: 160px;
-  display: block;
   width: 416px;
   height: 442px;
   list-style-type: none;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  transition: all 0.5s ease;
 }
-.shop__img {
+
+.shop__img--one {
   background-image: url('img/white-book.jpg');
   width: 416px;
   height: 442px;
   background-repeat: no-repeat;
-  display: block;
   background-size: cover;  
+  transition: all 0.5s ease;
+}
+.shop__item:hover .shop__img--one {
+  background-image: url('img/rigth-book.jpg');
+  width: 416px;
+  height: 442px;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  transition: all 0.5s ease;
+}
+
+.shop__img--two {
+  background-image: url('img/red-book-left.jpg');
+  width: 416px;
+  height: 442px;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  transition: all 0.5s ease;
+}
+.shop__item:hover .shop__img--two {
+  background-image: url('img/red-book-right.jpg');
+  width: 416px;
+  height: 442px;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  transition: all 0.5s ease;
+}
+.shop__img--three {
+  background-image: url('img/white-notebook-right.jpg');
+  width: 416px;
+  height: 442px;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  transition: all 0.5s ease;
+}
+.shop__item:hover .shop__img--three {
+  background-image: url('img/white-notebook-left.jpg');
+  width: 416px;
+  height: 442px;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  transition: all 0.5s ease;
+}
+.shop__img--four {
+  background-image: url('img/list-rigth.jpg');
+  width: 416px;
+  height: 442px;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  transition: all 0.5s ease;
+}
+.shop__item:hover .shop__img--four {
+  background-image: url('img/list-left.jpg');
+  width: 416px;
+  height: 442px;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  transition: all 0.5s ease;
+}
+.shop__img--five {
+  background-image: url('img/not-right.jpg');
+  width: 416px;
+  height: 442px;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  transition: all 0.5s ease;
+}
+.shop__item:hover .shop__img--five {
+  background-image: url('img/left-note.jpg');
+  width: 416px;
+  height: 442px;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  transition: all 0.5s ease;
+}
+.shop__img--six {
+  background-image: url('img//pen-right.jpg');
+  width: 416px;
+  height: 442px;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  transition: all 0.5s ease;
+}
+.shop__item:hover .shop__img--six {
+  background-image: url('img/pen-left.jpg');
+  width: 416px;
+  height: 442px;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  transition: all 0.5s ease;
 }
 
 .shop__product {
@@ -75,16 +165,22 @@ body {
 }
 .shop__link  {
   text-decoration: none;
-}
-.shop__cost {
   color: #333;
   font-family: Dosis,sans-serif;
   font-weight: 700;
+}
+.shop__cost {
+  color: #333;
+  margin-left: 10px;
+  font-size: 15px;
+  font-family: Dosis,sans-serif;
+  font-weight: bold;
 }
 .shop__prise {
   color: #828893;
   margin-left: 10px;
   font-size: 13px;
+  font-family: Dosis,sans-serif;
 }
 .shop__star {
   margin-top: 8px;
