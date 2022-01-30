@@ -39,6 +39,23 @@
   box-shadow: 0 0 29px 0 hsl(0deg 0% 40% / 10%);
 }
 
+.shop__sale {
+  position: relative;
+  top: 8%;
+  left: 8%;
+  width: 55px;
+  height: 55px;
+  background-color: red;
+  border-radius: 50%;
+  text-align: center;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-family: Dosis,sans-serif;
+  color: #fff;
+  line-height: 55px;
+  font-weight: 600;
+}
+
 .shop__imgone {
   background-image: url('img/rigth-book.jpg');
   width: 416px;
@@ -62,6 +79,7 @@
 }
 
 .shop__imgtwo {
+  position: relative;
   background-image: url('img/red-book-left.jpg');
   width: 416px;
   height: 442px;
