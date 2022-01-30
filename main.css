@@ -43,7 +43,6 @@ body {
   height: 442px;
   list-style-type: none;
   cursor: pointer;
-  overflow: hidden;
   transition: all 0.5s ease;
 }
 
