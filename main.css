@@ -48,13 +48,13 @@ body {
   width: 416px;
   height: 442px;
   list-style-type: none;
-  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
   transition: all 0.5s ease;
   margin-left: 24px;
+  cursor: pointer;
 }
 
 .shop__img--one {
-  background-image: url('img/white-book.jpg');
+  background-image: url('img/rigth-book.jpg');
   width: 416px;
   height: 442px;
   background-repeat: no-repeat;
@@ -63,7 +63,7 @@ body {
   overflow: hidden;
 }
 .shop__item:hover .shop__img--one {
-  background-image: url('img/rigth-book.jpg');
+  background-image: url('img/white-book.jpg');
   width: 416px;
   height: 442px;
   background-repeat: no-repeat;
@@ -156,10 +156,17 @@ body {
   background-size: cover;  
   transition: all 0.5s ease;
 }
-
+.bxs-cart-add  {
+  font-size: 20px;
+}
 .shop_part {
   position: relative;
+  transition: all .5s ease;
 }
+.shop_part:hover .shop__card {
+  background-color: #ff4800;
+  transition: all 0.5s ease;
+} 
 .shop__card {
   position: absolute;
   top: 500px;
@@ -196,16 +203,15 @@ body {
   transition: 0.5s ease;
 }
 
-/* 
+
 .card__add {
   color: #fff;
   text-transform: uppercase;
-  opacity: 1;
   font-size: 15px;
   font-weight: 600;
   font-family: Dosis,sans-serif;
-  visibility:visible;
-} */
+  text-decoration: none;
+}
 
 .shop__product {
   padding: 25px;
@@ -219,12 +225,18 @@ body {
   font-family: Dosis, sans-serif;
   margin-bottom: 5px;
 }
-.shop__link  {
+.shop__link {
   text-decoration: none;
   color: #333;
   font-family: Dosis,sans-serif;
   font-weight: 700;
+  transition: 0.5s ease;
 }
+.shop__link:hover {
+  color: #ff4800;
+  transition: 0.5s ease;
+}
+
 .shop__cost {
   color: #333;
   margin-left: 10px;
@@ -241,7 +253,47 @@ body {
 .shop__star {
   margin-top: 8px;
 }
-.bx {
+
+.page__list {
+  margin-bottom: 40px;
 }
-.bxs-star {
+.page__item {
+  list-style-type: none;
+  width: 40px;
+  height: 40px;
+  margin: 0 3px;
+  display: inline-block;
+  background-color: #fff;
+  line-height: 40px;
+  box-shadow: 0 2px 10px 0 #d8dde6;
+  transition: all 0.5s ease;
+}
+
+.page__item:hover {
+  background-color: #ff4800;
+  transition: all 0.5s ease;
+}
+
+.page__item:hover .page__link{
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.page__link {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Dosis,sans-serif;
+}
+
+.active {
+  background-color: #ff4800;
+  color: #fff
+}
+
+.bx-chevrons-left {
+  font-weight: 900;
+}
+.bx-chevrons-right {
+  font-weight: 900;
 }
