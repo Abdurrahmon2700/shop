@@ -40,17 +40,17 @@ body {
 }
 
 .shop__list {
-  justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
 }
 .shop__item {
-  margin-bottom: 160px;
+  margin-bottom: 205px;
   width: 416px;
   height: 442px;
   list-style-type: none;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
   transition: all 0.5s ease;
+  margin-left: 24px;
 }
 
 .shop__img--one {
@@ -60,6 +60,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;  
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 .shop__item:hover .shop__img--one {
   background-image: url('img/rigth-book.jpg');
@@ -77,6 +78,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;  
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 .shop__item:hover .shop__img--two {
   background-image: url('img/red-book-right.jpg');
@@ -93,6 +95,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;  
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 .shop__item:hover .shop__img--three {
   background-image: url('img/white-notebook-left.jpg');
@@ -109,6 +112,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;  
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 .shop__item:hover .shop__img--four {
   background-image: url('img/list-left.jpg');
@@ -125,6 +129,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;  
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 .shop__item:hover .shop__img--five {
   background-image: url('img/left-note.jpg');
@@ -141,6 +146,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;  
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 .shop__item:hover .shop__img--six {
   background-image: url('img/pen-left.jpg');
@@ -150,6 +156,56 @@ body {
   background-size: cover;  
   transition: all 0.5s ease;
 }
+
+.shop_part {
+  position: relative;
+}
+.shop__card {
+  position: absolute;
+  top: 500px;
+  left: 0;
+  width: 100%;
+  height:46px;
+  background-color: #333;
+  padding: 12px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Dosis,sans-serif;
+  transition:  all 1s ease;
+  animation-name: myshopcard;
+  /* animation-duration: 0.4s; */
+  animation-timing-function: ease;
+}
+@keyframes myshopcard {
+  0% {
+    opacity: 0;
+    transition: 0.4s ease;
+  }
+  100% {
+      opacity: 1;
+      transition: 0.5s ease;
+  }
+}
+
+.shop__item:hover .shop__card{
+  top: 400px;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+/* 
+.card__add {
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 1;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Dosis,sans-serif;
+  visibility:visible;
+} */
 
 .shop__product {
   padding: 25px;
