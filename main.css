@@ -1,0 +1,95 @@
+body {
+
+}
+.shop {
+}
+.shop__select {
+  padding: 110px 0px 0px;
+  /* margin-right: 24px; */
+  margin-bottom: 50px;
+}
+
+.select__description {
+
+}
+
+.select__selection {
+}
+
+.select__description {
+  font-size: 16px;
+  font-family: Dosis, sans-serif;
+  font-size: 15px;
+  color: #57647c;
+  margin-bottom: 15px;
+
+}
+.select__selection {
+  background-color: #fff;
+  color: #57647c;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 29px 0 hsl(0deg 0% 40% / 10%);
+  float: unset;
+  height: unset;
+  line-height: normal;
+  padding: 15px 35px 15px 20px;
+  font-family: Dosis,sans-serif;
+  font-size: 16px;
+}
+
+.shop__list {
+  justify-content: space-between;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+.shop__item {
+  margin-bottom: 160px;
+  display: block;
+  width: 416px;
+  height: 442px;
+  list-style-type: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.shop__img {
+  background-image: url('img/white-book.jpg');
+  width: 416px;
+  height: 442px;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: cover;  
+}
+
+.shop__product {
+  padding: 25px;
+  text-align: center;
+  height: 138px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+} 
+
+.shop__title {
+  font-size: 23px;
+  font-family: Dosis, sans-serif;
+  margin-bottom: 5px;
+}
+.shop__link  {
+  text-decoration: none;
+}
+.shop__cost {
+  color: #333;
+  font-family: Dosis,sans-serif;
+  font-weight: 700;
+}
+.shop__prise {
+  color: #828893;
+  margin-left: 10px;
+  font-size: 13px;
+}
+.shop__star {
+  margin-top: 8px;
+}
+.bx {
+}
+.bxs-star {
+}
