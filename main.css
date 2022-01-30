@@ -44,12 +44,11 @@ body {
   flex-wrap: wrap;
 }
 .shop__item {
-  margin-bottom: 205px;
+  margin-bottom: 170px;
   width: 416px;
   height: 442px;
   list-style-type: none;
   transition: all 0.5s ease;
-  margin-left: 24px;
   cursor: pointer;
 }
 
